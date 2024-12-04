@@ -11,7 +11,7 @@ struct MenuItem {
     bool isSelected;
 };
 
-class MainMenuState : public GameState {
+class MainMenuState final : public GameState {
 public:
     MainMenuState();
     void enter() override;

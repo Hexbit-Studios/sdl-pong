@@ -17,7 +17,9 @@ add_executable(${PROJECT_NAME} main.cpp
         practice_mode_state.h
         vector2.h
         main_menu_state.cpp
-        practice_mode_state.cpp)
+        practice_mode_state.cpp
+        play_game_state.h
+        play_game_state.cpp)
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "Pong")
 
 # Link SDL2

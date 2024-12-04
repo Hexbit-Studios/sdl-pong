@@ -1,22 +1,24 @@
-#ifndef PRACTICE_MODE_STATE_H
-#define PRACTICE_MODE_STATE_H
+#ifndef PLAY_GAME_STATE_H
+#define PLAY_GAME_STATE_H
 
 #include "game_state.h"
 #include "vector2.h"
 
-class PracticeModeState final : public GameState {
+class PlayGameState final : public GameState {
 public:
-    PracticeModeState();
+    PlayGameState();
     void enter() override;
     void exit() override;
     void processInput(Game& game, const SDL_Event& event) override;
     void update(Game& game, float deltaTime) override;
     void render(SDL_Renderer* renderer) override;
 private:
-    Vector2 _paddlePosition;
-    int _paddleDirection;
+    Vector2 _paddleOnePosition;
+    int _paddleOneDirection;
+    Vector2 _paddleTwoPosition;
+    int _paddleTwoDirection;
     Vector2 _ballPosition;
     Vector2 _ballVelocity;
 };
 
-#endif //PRACTICE_MODE_STATE_H
+#endif //PLAY_GAME_STATE_H

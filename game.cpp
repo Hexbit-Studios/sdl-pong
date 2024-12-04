@@ -109,5 +109,3 @@ void Game::_render() {
     }
     SDL_RenderPresent(_renderer);
 }
-
-

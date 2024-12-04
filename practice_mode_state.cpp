@@ -128,6 +128,3 @@ void PracticeModeState::render(SDL_Renderer *renderer) {
     };
     SDL_RenderFillRect(renderer, &paddle);
 }
-
-
-
