@@ -12,7 +12,7 @@ include_directories(${SDL2_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME} main.cpp
         game.h
         game.cpp)
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "My Game")
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "Pong")
 
 # Link SDL2
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2)
