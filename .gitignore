@@ -36,3 +36,7 @@ build/
 
 # CMake files
 cmake-build-debug/
+
+# idea files
+.idea/editor.xml
+.idea/workspace.xml
