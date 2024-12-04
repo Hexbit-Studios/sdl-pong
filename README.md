@@ -42,3 +42,34 @@ Main Menu:
 Allow force feedback for gamepads.
 
 ### Support multiple resolutions (game renders correctly at all resolutions)
+
+## Building & Running the Game
+
+This was developed on a Mac running macOS Sequoia (15.1.1) using CLion as the IDE, so your mileage may vary.
+
+To build the game, you'll need to have the SDL2 library installed on your system. You can download it from the [SDL GitHub](https://github.com/libsdl-org/SDL/releases).
+Personally, I just installed it via homebrew on my Mac:
+
+```bash
+brew install sdl2
+```
+
+You'll also need to have CMake installed. You can download it from the [CMake website](https://cmake.org/download/), or you can install it via homebrew:
+
+```bash
+brew install cmake
+```
+
+You can build and run the game from your IDE using the provided CMakeLists.txt file. If you're using CLion, you can just open the project and run it from there.
+
+If you're using the command line, you can build the game by running the following command:
+
+```bash
+cmake -B build && cmake --build build
+```
+
+This will build the game and place the executable in the `build` directory. You can then run the game by executing the `pong` executable:
+
+```bash
+./build/pong
+```
