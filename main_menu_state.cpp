@@ -2,6 +2,7 @@
 #include "game.h"
 #include "practice_mode_state.h"
 #include "play_game_state.h"
+#include "options_state.h"
 
 MainMenuState::MainMenuState() : _selectedItem(0) {}
 
@@ -63,6 +64,7 @@ void MainMenuState::processInput(Game &game, const SDL_Event &event) {
                         game.changeState(std::make_unique<PlayGameState>());
                         break;
                     case 3: // Options
+                        game.changeState(std::make_unique<OptionsState>());
                         break;
                     case 4: // Quit
                         game.quit();
